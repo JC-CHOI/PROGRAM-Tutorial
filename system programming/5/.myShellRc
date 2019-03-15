@@ -1,0 +1,4 @@
+setpath /bin
+setpath /usr/bin
+setpath /usr/local/bin
+
