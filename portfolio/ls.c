@@ -139,23 +139,6 @@ void Option(int argc,char *argv[],char *option)
 
 }
 
-void Sort(char *argv[],char *new[])
-{
-/*
-	char tmp[MAXLENGTH]={};
-	char **now;
-	char **next;
-
-	while(*now && *next)
-	{
-		
-		if(**now == '-')
-			continue;
-		if(strcmp(**now,**next))
-
-	}
-*/
-}
 void Seperate_Mode(char *argv[],char *dir[],char *file[])
 {
 	struct stat s_buf;
