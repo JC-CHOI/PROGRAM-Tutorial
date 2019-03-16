@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sys/types.h>
@@ -34,8 +34,6 @@ void main(int argc, char *argv[])
 
 	Option(argc,argv,option);
 
-	//Sort(argv,new);
-	
 	Seperate_Mode(argv,dir,file);
 	
 	for(i=0 ; i<f_index ; i++)
@@ -47,7 +45,6 @@ void main(int argc, char *argv[])
 			printf("\n");
 	}	
 	
-		
 	if(!d_index)
 	{
 		dir[0]=malloc(sizeof(*argv));
