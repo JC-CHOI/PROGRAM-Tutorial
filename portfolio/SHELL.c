@@ -32,7 +32,7 @@ void main()
 	{
 		printf("%% ");
 		fgets(command,MAX_LENGTH,stdin);
-        command[strlen(command)-1]='\0';
+     		command[strlen(command)-1]='\0';
 		Command_handler(command,argv);
 		
 		if(!argv[0])
@@ -73,9 +73,9 @@ int File_read(char **argv,char **path)
 	int fd=0,index=0;
 	char tmp,path_tmp[MAX_LENGTH];
 
-	if((fd=open("/home/yesblue/.myShellRc",O_RDONLY)) < 0)
+	if((fd=open("./.myShellRc",O_RDONLY)) < 0)
 	{
-		perror("/home/yesblue/.myShellRc : ");
+		perror(".myShellRc : ");
 		return -1;
 	}
 	
